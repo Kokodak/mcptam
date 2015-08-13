@@ -16,13 +16,11 @@
   <param name="image_transport" type="string" value="compressed"/>
   
   <param name="get_pose_separately" type="bool" value="$(arg separate_pose)" />   
-  <!-- <param name="extrinsic_scale" type="double" value="0.95426" /> -->
-  
   <param name="dynamic_sync" type="bool" value="true" />
-  
   <!--
-  <param name="camera_pose_file" type="string" value="$(find mcptam)/poses/poses_calibrator.dat" />
+  <param name="camera_pose_file" type="string" value="$(find mcptam)/poses/poses.dat" />
   -->
+
 <!--
   <rosparam command="load" file="$(find mcptam)/masks/masks_1,2,3,4.yaml" />
   <param name="masks_dir" type="string" value="$(find mcptam)/masks" />
@@ -35,10 +33,8 @@
   <param name="mm_max_scaled_mkf_dist" type="double" value="0.3" />
   <param name="mm_outlier_multiplier" type="double" value="1.1" />
   <param name="mm_init_cov_thresh" type="double" value="0.01" />
-  <param name="kf_adaptive_thresh" type="bool" value="true" />
-  <param name="level_zero_points" type="bool" value="true" />
   
-  <param name="adjuster_recent_min_size" type="int" value="60" />
+  <param name="level_zero_points" type="bool" value="true" />
   
   <!-- For no GUI, set headless:=true -->
   <param name="headless" type="bool" value="$(arg headless)" />
