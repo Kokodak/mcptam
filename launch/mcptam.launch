@@ -20,14 +20,16 @@
   <param name="set_info_topic" type="string" value="camera/set_camera_info"/>
   
   <param name="get_pose_separately" type="bool" value="$(arg separate_pose)" />   
-  <!-- <param name="extrinsic_scale" type="double" value="0.95426" /> -->
-  
   <param name="dynamic_sync" type="bool" value="true" />
+<<<<<<< HEAD
 
   <param name="camera_pose_file" type="string" value="$(find mcptam)/poses/poses.dat" />
+=======
+>>>>>>> b5aa7849dbd82f15546bde5bf6c742cfcb8fa45b
   <!--
-  <param name="camera_pose_file" type="string" value="$(find mcptam)/poses/poses_calibrator.dat" />
+  <param name="camera_pose_file" type="string" value="$(find mcptam)/poses/poses.dat" />
   -->
+
 <!--
   <rosparam command="load" file="$(find mcptam)/masks/masks_1,2,3,4.yaml" />
   <param name="masks_dir" type="string" value="$(find mcptam)/masks" />
@@ -39,11 +41,15 @@
   <param name="kf_distance_mean_diff_fraction" type="double" value="0.5" /> 
   <param name="mm_max_scaled_mkf_dist" type="double" value="0.3" />
   <param name="mm_outlier_multiplier" type="double" value="1.1" />
+<<<<<<< HEAD
   <param name="mm_init_cov_thresh" type="double" value="1.0" />
   <param name="kf_adaptive_thresh" type="bool" value="true" />
   <param name="level_zero_points" type="bool" value="true" />
+=======
+  <param name="mm_init_cov_thresh" type="double" value="0.01" />
+>>>>>>> b5aa7849dbd82f15546bde5bf6c742cfcb8fa45b
   
-  <param name="adjuster_recent_min_size" type="int" value="60" />
+  <param name="level_zero_points" type="bool" value="true" />
   
   <!-- For no GUI, set headless:=true -->
   <param name="headless" type="bool" value="$(arg headless)" />
